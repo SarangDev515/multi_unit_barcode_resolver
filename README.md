@@ -1,14 +1,26 @@
-# Multi-Unit Packaging & Barcode Resolver
+# Multi-Unit Barcode for Odoo 19
 
-Odoo 19 addon for scanning individual units, inner boxes, master cartons, and pallets against one product profile.
+Download a free Odoo 19 multi-unit barcode addon for product packaging, inner boxes, master cartons, pallets, and stock receipt scanning.
 
-Author: SARANG T
+This GitHub module lets warehouse users scan one product in different package sizes and automatically convert every scan into the product's stock UoM.
+
+- Author: SARANG T
+- Odoo version: 19.0
+- License: LGPL-3
+- Addon name: `multi_unit_barcode_resolver`
+
+## GitHub download
+
+- [Download the Odoo 19 addon as a ZIP file](https://github.com/SarangDev515/multi_unit_barcode_resolver/archive/refs/heads/odoo-19.zip)
+- [Browse the `odoo-19` source branch](https://github.com/SarangDev515/multi_unit_barcode_resolver/tree/odoo-19)
+
+Download the ZIP, extract the `multi_unit_barcode_resolver` folder into your Odoo custom addons directory, update the Apps list, and install the module.
 
 ## Working implementation
 
-The current addon is installed and working in the local Odoo 19 database `odoo19-main`.
+The addon is installed and working in the local Odoo 19 database `odoo19-main`.
 
-Implemented and validated:
+Implemented:
 
 - Extends Odoo 19's native `product.uom` packaging barcode model.
 - Supports single-unit product barcodes.
@@ -22,7 +34,7 @@ Implemented and validated:
 - Blocks incoming receipt validation when package scans are present but do not match the receipt demand.
 - Adds package-level metadata and converted stock-unit previews to the Packaging Barcodes list.
 - Includes a temporary scan wizard for repeated warehouse barcode scans.
-- Includes the scanner artwork from `static/description/icon.svg` as the module icon.
+- Includes the supplied SVG scanner artwork as the module icon.
 
 ## Validation completed
 
@@ -62,3 +74,7 @@ A receipt for 24 units can therefore be completed by scanning the 12-unit inner-
 ## Scope notes
 
 This version intentionally uses Odoo's standard stock move quantity and validation flow. It does not yet create a separate physical `stock.package` record for every barcode scan, parse GS1 variable-weight data, integrate with the optional `stock_barcode` mobile client, or print labels.
+
+## Search terms
+
+Odoo 19 barcode addon, multi-unit barcode for Odoo, Odoo product packaging barcode, inner box barcode, master carton barcode, pallet barcode, stock receipt barcode scanning, Odoo inventory barcode module, and GitHub Odoo 19 addon.
