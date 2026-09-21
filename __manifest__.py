@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Multi-Unit Packaging & Barcode Resolver',
-    'summary': 'Resolve unit, inner-pack, and master-pack barcodes during stock operations',
+    'summary': 'Odoo 19 multi-unit barcode addon for boxes, cartons, pallets, and stock receipts',
     'description': """
 Multi-Unit Packaging & Barcode Resolver
 
