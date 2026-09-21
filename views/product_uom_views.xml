@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_uom_list_view_multi_unit" model="ir.ui.view">
+        <field name="name">product.uom.list.multi.unit.barcode</field>
+        <field name="model">product.uom</field>
+        <field name="inherit_id" ref="product.product_uom_list_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='uom_id']" position="after">
+                <field name="packaging_level"/>
+                <field name="units_per_scan" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
