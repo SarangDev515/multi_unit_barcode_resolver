@@ -4,6 +4,8 @@ Download a free Odoo 19 multi-unit barcode addon for product packaging, inner bo
 
 This GitHub module lets warehouse users scan one product in different package sizes and automatically convert every scan into the product's stock UoM.
 
+![Odoo 19 multi-unit barcode addon in the Apps screen](https://raw.githubusercontent.com/SarangDev515/multi_unit_barcode_resolver/odoo-19/static/description/odoo-app-screen.png)
+
 - Author: SARANG T
 - Odoo version: 19.0
 - License: LGPL-3
